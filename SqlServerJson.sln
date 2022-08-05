@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlServerJson", "SqlServerJson\SqlServerJson.csproj", "{1E00F3A2-AB05-4C94-B556-4ED3FC61D1EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E00F3A2-AB05-4C94-B556-4ED3FC61D1EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E00F3A2-AB05-4C94-B556-4ED3FC61D1EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E00F3A2-AB05-4C94-B556-4ED3FC61D1EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E00F3A2-AB05-4C94-B556-4ED3FC61D1EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
