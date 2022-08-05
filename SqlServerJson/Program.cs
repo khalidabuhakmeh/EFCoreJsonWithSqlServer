@@ -19,16 +19,16 @@ var expensive = database.Products
 
 Console.WriteLine(expensive.ToQueryString() + "\n");
 
-var newProduct = new Product {
-    Info = new ProductInfo { Name = "Banana", Price = 3m }
-};
-
-// correct
-newProduct.Info = new() { Name = "Banana", Price = 4m };
-// incorrect (won't serialize when setting the value)
-newProduct.Info.Price = 4m;
-
 foreach (var product in expensive)
 {
     Console.WriteLine($"{product.Name} ({product.Price:C})");
+}
+
+var deserialized = database.Products.Take(10).ToList();
+
+Console.Write("\nUsing NotMapped Attribute\n");
+foreach (var product in deserialized)
+{
+    var info = product.Info;
+    Console.WriteLine($"{info?.Name} ({info?.Price:C})");
 }
